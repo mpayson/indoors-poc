@@ -5,8 +5,8 @@ from time import sleep
 from requests import post
 
 DELAY = 2
-LATRANGE = [32.7065053, 0.0007]
-LONRANGE = [-117.1614935, 0.001]
+LATNDIST = [32.7065053, 0.0007]
+LONNDIST = [-117.1614935, 0.001]
 ZRANGE = [1, 3]
 IDRANGE = [1, 5]
 DATERANGE = [0, 43200] #12 hours
@@ -14,15 +14,15 @@ DATERANGE = [0, 43200] #12 hours
 GESERVICE = "http://startupsges.bd.esri.com:6180/geoevent/rest/receiver/indoors-features-in-rest"
 
 def random_date():
-    """Generate a random datetime between now and 24 hours from now"""
+    """Generate a random within the specified range from now"""
     ctime = datetime.utcnow()
     d_s = randint(DATERANGE[0], DATERANGE[1])
     return ctime + timedelta(seconds=d_s)
 
 def get_feature():
     """get the feature to post to geoevent"""
-    lat = normalvariate(LATRANGE[0], LATRANGE[1])
-    lon = normalvariate(LONRANGE[0], LONRANGE[1])
+    lat = normalvariate(LATNDIST[0], LATNDIST[1])
+    lon = normalvariate(LONNDIST[0], LONNDIST[1])
     f_z = randint(ZRANGE[0], ZRANGE[1])
     uid = str(randint(IDRANGE[0], IDRANGE[1]))
     sim_time = random_date().isoformat()
