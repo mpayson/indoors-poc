@@ -8,7 +8,7 @@ Input:
 
 Output:
 * Stream Service: https://startupsges.bd.esri.com/server/rest/services/IndoorsPOCStream/StreamServer
-* Historical Feature Service: https://services.arcgis.com/q7zPNeKmTWeh7Aor/arcgis/rest/services/indoors_history/FeatureServer
+* Historical Feature Service: https://services.arcgis.com/q7zPNeKmTWeh7Aor/arcgis/rest/services/indoors_history/FeatureServer/0
 
 ### Content Services
 * Building: https://services.arcgis.com/q7zPNeKmTWeh7Aor/arcgis/rest/services/SDCC_Buildings/FeatureServer
