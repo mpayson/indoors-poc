@@ -1,4 +1,17 @@
 # Byte-compiled / optimized / DLL files
+
+#Local
+.DS_Store
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+#ignore folders
+certs/
+
+#python stuff
 __pycache__/
 *.py[cod]
 *$py.class
