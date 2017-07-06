@@ -33,7 +33,7 @@ Expected input format (JSON post):
     "buildingY":<double>,
     "buildingZ":<double>,
     "other": <string>,
-    "timerecordstamp": <date iso 8601>
+    "timerecordstamp": <date utc iso 8601>
   },
   "geometry": {
       "x": <LON || double>,
