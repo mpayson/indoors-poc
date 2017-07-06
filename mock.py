@@ -25,8 +25,8 @@ def get_feature():
             "lon": lon,
             "z": f_z,
             "buildingX":11.2,
-		    "buildingY":12.3,
-		    "buildingZ":123.3,
+            "buildingY":12.3,
+            "buildingZ":123.3
         },
         "geometry": {
             "x": lon,
@@ -54,9 +54,10 @@ if __name__ == "__main__":
             p_f = get_feature()
             post_feature(p_f)
             print "posted: {0}".format(count)
+            count += 1
             time.sleep(DELAY)
         except KeyboardInterrupt:
             break
 
 
-    print "So Long!"
+    print "\nSo Long!"
